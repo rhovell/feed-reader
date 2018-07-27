@@ -1,4 +1,4 @@
-#RSS Feed-reader testing
+# RSS Feed-reader testing
 
 You can see this app working at https://rhovell.github.io/feed-reader/
 
@@ -8,25 +8,25 @@ This particular module was designed to test against the functionality of a RSS f
 There are 8 current specs that the app is being tested against (listed below), that ensure that the app runs how it should.
 If you choose to install this app (detailed below), you can use the Jasmine test suite to ensure any changes you make, do not interfere with the background coding.
 
-##Tests Included
+## Tests Included
 
-###RSS Feeds
--are defined
--have URL
--have name
+### RSS Feeds
+- are defined
+- have URL
+- have name
 
-###The Menu
--menu should be hidden by default
--should show the menu on menu-icon click
--should hide menu on menu-icon click or feed item click
+### The Menu
+- menu should be hidden by default
+- should show the menu on menu-icon click
+- should hide menu on menu-icon click or feed item click
 
-###Initial Entries
--should have at least one feed entry
+### Initial Entries
+- should have at least one feed entry
 
-###New Feed Selection
--should load new items as they are added to the feed
+### New Feed Selection
+- should load new items as they are added to the feed
 
-##Installation
+## Installation
 
 Download the zip file, or clone this repository to your home folder. Load the index.html file in your browser.
 You should have a working blog, complete with Udacity blog posts, and a Jasmine testing suite at the bottom of the page.
