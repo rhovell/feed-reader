@@ -1,48 +1,35 @@
-# Project Overview
+#RSS Feed-reader testing
 
-In this project you are given a web-based application that reads RSS feeds. The original developer of this application clearly saw the value in testing, they've already included [Jasmine](http://jasmine.github.io/) and even started writing their first test suite! Unfortunately, they decided to move on to start their own company and we're now left with an application with an incomplete test suite. That's where you come in.
+You can see this app working at https://rhovell.github.io/feed-reader/
 
+This app has a Jasmine testing suite build environment which allows you to build with confidence, knowing that you can code without breaking your app. It helps to avoid disasters, and saves you hundreds of hours of app testing!
 
-## Why this Project?
+This particular module was designed to test against the functionality of a RSS feed blog.
+There are 8 current specs that the app is being tested against (listed below), that ensure that the app runs how it should.
+If you choose to install this app (detailed below), you can use the Jasmine test suite to ensure any changes you make, do not interfere with the background coding.
 
-Testing is an important part of the development process and many organizations practice a standard of development known as "test-driven development". This is when developers write tests first, before they ever start developing their application. All the tests initially fail and then they start writing application code to make these tests pass.
+##Tests Included
 
-Whether you work in an organization that uses test-driven development or in an organization that uses tests to make sure future feature development doesn't break existing features, it's an important skill to have!
+###RSS Feeds
+-are defined
+-have URL
+-have name
 
+###The Menu
+-menu should be hidden by default
+-should show the menu on menu-icon click
+-should hide menu on menu-icon click or feed item click
 
-## What will I learn?
+###Initial Entries
+-should have at least one feed entry
 
-You will learn how to use Jasmine to write a number of tests against a pre-existing application. These will test the underlying business logic of the application as well as the event handling and DOM manipulation.
+###New Feed Selection
+-should load new items as they are added to the feed
 
+##Installation
 
-## How will this help my career?
+Download the zip file, or clone this repository to your home folder. Load the index.html file in your browser.
+You should have a working blog, complete with Udacity blog posts, and a Jasmine testing suite at the bottom of the page.
 
-* Writing effective tests requires analyzing multiple aspects of an application including the HTML, CSS and JavaScript - an extremely important skill when changing teams or joining a new company.
-* Good tests give you the ability to quickly analyze whether new code breaks an existing feature within your codebase, without having to manually test all of the functionality.
-
-
-# How will I complete this project?
-
-Review the Feed Reader Testing [Project Rubric](https://review.udacity.com/#!/projects/3442558598/rubric)
-
-1. Take the JavaScript Testing [course](https://www.udacity.com/course/ud549)
-2. Download the [required project assets](http://github.com/udacity/frontend-nanodegree-feedreader).
-3. Review the functionality of the application within your browser.
-4. Explore the application's HTML (**./index.html**), CSS (**./css/style.css**) and JavaScript (**./js/app.js**) to gain an understanding of how it works.
-5. Explore the Jasmine spec file in **./jasmine/spec/feedreader.js** and review the [Jasmine documentation](http://jasmine.github.io).
-6. Edit the `allFeeds` variable in **./js/app.js** to make the provided test fail and see how Jasmine visualizes this failure in your application.
-7. Return the `allFeeds` variable to a passing state.
-8. Write a test that loops through each feed in the `allFeeds` object and ensures it has a URL defined and that the URL is not empty.
-9. Write a test that loops through each feed in the `allFeeds` object and ensures it has a name defined and that the name is not empty.
-10. Write a new test suite named `"The menu"`.
-11. Write a test that ensures the menu element is hidden by default. You'll have to analyze the HTML and the CSS to determine how we're performing the hiding/showing of the menu element.
-12. Write a test that ensures the menu changes visibility when the menu icon is clicked. This test should have two expectations: does the menu display when clicked and does it hide when clicked again.
-13. Write a test suite named `"Initial Entries"`.
-14. Write a test that ensures when the `loadFeed` function is called and completes its work, there is at least a single `.entry` element within the `.feed` container.
-15. Write a test suite named `"New Feed Selection"`.
-16. Write a test that ensures when a new feed is loaded by the `loadFeed` function that the content actually changes.
-17. No test should be dependent on the results of another.
-18. Callbacks should be used to ensure that feeds are loaded before they are tested.
-19. Implement error handling for undefined variables and out-of-bound array access.
-20. When complete - all of your tests should pass. 
-21. Write a README file detailing all steps required to successfully run the application. If you have added additional tests (for Udacious Test Coverage),  provide documentation for what these future features are and what the tests are checking for.
+If you are interested in testing the feeds, alter the `feedreader.js` file, reload your browser and see what Jasmine says. You can go back and fix the code to correct the errors presented in Jasmine, and then proceed to add further testing suites as you add more features to your app.
+If you are interested in editing the feed to include your own RSS feed, you will need to change the URL that the `loadFeed()` function is pointing to in the `app.js` file. Make sure to change the URL's of the items within the `allFeeds` array in this file too. These should point to specific items within your feed.
