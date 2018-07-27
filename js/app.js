@@ -7,6 +7,7 @@
  */
 
 // The names and URLs to all of the feeds we'd like available.
+// TODO if you want your own RSS feed, change the names and URL's of all the items in the allFeeds array below.
 var allFeeds = [
     {
         name: 'Udacity Blog',
@@ -32,7 +33,7 @@ function init() {
     loadFeed(0);
 }
 
-/* This function performs everything necessary to load a
+/** @description This function performs everything necessary to load a
  * feed using the Google Feed Reader API. It will then
  * perform all of the DOM operations required to display
  * feed entries on the page. Feeds are referenced by their
@@ -43,7 +44,7 @@ function init() {
  function loadFeed(id, cb) {
      var feedUrl = allFeeds[id].url,
          feedName = allFeeds[id].name;
-
+// TODO if you want your own RSS feed, change the URL below.
      $.ajax({
        type: "POST",
        url: 'https://rsstojson.udacity.com/parseFeed',
