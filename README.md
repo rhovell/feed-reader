@@ -31,5 +31,5 @@ If you choose to install this app (detailed below), you can use the Jasmine test
 Download the zip file, or clone this repository to your home folder. Load the index.html file in your browser.
 You should have a working blog, complete with Udacity blog posts, and a Jasmine testing suite at the bottom of the page.
 
-If you are interested in testing the feeds, alter the `feedreader.js` file, reload your browser and see what Jasmine says. You can go back and fix the code to correct the errors presented in Jasmine, and then proceed to add further testing suites as you add more features to your app.
+If you are interested in testing the feeds, alter the `feedreader.js` file, reload your browser and see what Jasmine says. You can go back and fix the code to correct the errors presented in Jasmine, and then proceed to add further testing suites as you add more features to your app.<br>
 If you are interested in editing the feed to include your own RSS feed, you will need to change the URL that the `loadFeed()` function is pointing to in the `app.js` file. Make sure to change the URL's of the items within the `allFeeds` array in this file too. These should point to specific items within your feed.
